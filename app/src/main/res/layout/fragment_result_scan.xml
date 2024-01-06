@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none"
+    tools:context=".ui.ResultScanFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtResultDetection"
+            style="@style/TextAppearance.MaterialComponents.Headline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Hasil Deteksi"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtResultDetection">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/icPict"
+                android:layout_width="300dp"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher_background" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="4dp"
+            android:text="Nama Pasien"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/txtNamePatient"
+            app:layout_constraintStart_toStartOf="@+id/parent"
+            app:layout_constraintTop_toBottomOf="@+id/parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtNamePatient"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="4dp"
+            android:text="Asep"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/parent"
+            app:layout_constraintStart_toEndOf="@id/txtName"
+            app:layout_constraintTop_toBottomOf="@+id/parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtAge"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="Umur Pasien"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/txtNamePatient"
+            app:layout_constraintStart_toStartOf="@+id/parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtName" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtAgePatient"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="18 Tahun"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/parent"
+            app:layout_constraintStart_toEndOf="@id/txtName"
+            app:layout_constraintTop_toBottomOf="@+id/txtNamePatient" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="Tanggal Operasi"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/txtNamePatient"
+            app:layout_constraintStart_toStartOf="@+id/parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtAge" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtDatePatient"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="2 Januari 2024"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/parent"
+            app:layout_constraintStart_toEndOf="@id/txtName"
+            app:layout_constraintTop_toBottomOf="@+id/txtAgePatient" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtDegree"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="Derajat Kelengkungan"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/txtNamePatient"
+            app:layout_constraintStart_toStartOf="@+id/parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtDate" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtDegreePatient"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="18"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/parent"
+            app:layout_constraintStart_toEndOf="@id/txtName"
+            app:layout_constraintTop_toBottomOf="@+id/txtDatePatient" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtDesc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="4dp"
+            android:text="Catatan Dokter"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/txtNamePatient"
+            app:layout_constraintStart_toStartOf="@+id/parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtDegree" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilDesc"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Deskripsi"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:layout_constraintEnd_toEndOf="@id/parent"
+            app:layout_constraintStart_toStartOf="@id/parent"
+            app:layout_constraintTop_toBottomOf="@id/txtDesc">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:inputType="text"
+                android:minHeight="100dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnBackHome"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="Kembali ke Home"
+            android:textAllCaps="false"
+            android:textSize="14sp"
+            app:cornerRadius="8dp"
+            app:layout_constraintBottom_toTopOf="@id/btnHistory"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tilDesc" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnHistory"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="Masuk ke dalam Riwayat"
+            android:textAllCaps="false"
+            app:cornerRadius="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnBackHome" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

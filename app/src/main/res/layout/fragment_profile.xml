@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ProfileFragment">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/background_header"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:src="@drawable/bg_header_common"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/icHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:src="@drawable/img_txt_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/icAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:src="@drawable/baseline_info_24"
+        app:layout_constraintBottom_toBottomOf="@+id/background_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/bgHeaderProfile"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_margin="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_header_profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/background_header" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/bgProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:src="@drawable/ic_comment_user"
+        app:layout_constraintEnd_toEndOf="@+id/bgHeaderProfile"
+        app:layout_constraintStart_toStartOf="@+id/bgHeaderProfile"
+        app:layout_constraintTop_toTopOf="@+id/bgHeaderProfile" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txtNameDoctor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="Dr. Riri Kusumawati"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/bgHeaderProfile"
+        app:layout_constraintStart_toStartOf="@+id/bgHeaderProfile"
+        app:layout_constraintTop_toBottomOf="@+id/bgProfile" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txtEmailDoctor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="riri@gmail.com"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/bgHeaderProfile"
+        app:layout_constraintStart_toStartOf="@+id/bgHeaderProfile"
+        app:layout_constraintTop_toBottomOf="@+id/txtNameDoctor" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txtSpecialistDoctor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="Spesialis Urologi"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/bgHeaderProfile"
+        app:layout_constraintStart_toStartOf="@+id/bgHeaderProfile"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmailDoctor" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnLogout"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:text="Logout"
+        android:textAllCaps="false"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
